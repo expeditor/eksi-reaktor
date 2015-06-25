@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ekşi Reaktör</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <style>
+
+    html, body {
+      min-width: 400px;
+      max-width: 500px;
+      overflow: hidden;
+      font-size: 100%;
+    }
+
+    body: { margin: 10px;}
+
+    div {
+      margin: 10px;
+    }
+
+    input[type=text] {
+      width: 100%;
+    }
+
+    #status {
+      font-weight: bold;
+    }
+
+
+  </style>
+  
+  
+  
+</head>
+
+<body>
+  Sol frame'de sansürlenesi kelimeler: <br>
+  <input type="text" id="sansurle" placeholder="Kelimeleri virgül ile ayırınız">
+
+<p>
+  <label>
+    <input type="checkbox" id="solFrame">
+    Sol frame'i göster.
+  </label>
+</p>
+
+<p>
+  <label>
+    <input type="checkbox" id="konulu">
+    Konulu videoları göster.
+  </label>
+</p>
+
+<p>
+  <label>
+    <input type="checkbox" id="youtube">
+    Konulu videolarda 59saniye yerine <i>YouTube</i> olsun. (Başlığın YouTube'daki en alakalı sonucunu getirir.)
+  </label>
+</p>
+
+<p>
+  <label>
+    <input type="checkbox" id="troll">
+    Entrylerin yanındaki diğer menüsüne Troll butonu ekle. <sup>yakında!</sup>
+  </label>
+</p>
+
+  <div id="status"></div>
+
+  <button id="save">Kaydet</button>
+
+  <script src="options.js"></script>
+  </body>
+</html>
