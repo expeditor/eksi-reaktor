@@ -1,6 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Ekşi Reaktör",
+  "author": "expeditor",
+  "homepage_url": "https://github.com/expeditor/eksi-reaktor",
   "description": "EkşiSözlük için bağzı aparatlar",
   "version": "1.1",
   "permissions": [

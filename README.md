@@ -1,5 +1,5 @@
 # Ekşi Reaktör
-[ekşisözlük](https://eksisozluk.com) deneyimini iyileştirmek için faydalı bir Chrome uzantısı.
+[ekşisözlük](https://eksisozluk.com) deneyimini iyileştirmek için faydalı bir Chrome uzantısı. Zaman buldukça geliştirmeye devam edeceğim.
 
 ![Ekşi Reaktör ekran görüntüsü](https://i.imgur.com/fHVIzF8.png)
 
@@ -24,7 +24,13 @@ Biraz daha olgunlaşınca Chrome Web Store'a göndereceğim. Web Store'a gönder
 
 Güncellemeleri kolayca takip etmek için `git clone` yaptıktan sonra, zaman zaman güncellemeler için `git fetch` sonrası `chrome://extensions`'dan Ekşi Reaktör'ü `yenile`meniz lazım.
 
-## Krediler
+### Sürüm değişiklikleri
+- **v1.1**:
+ - Entry yanındaki diğer menüsüne troll seçeneği.
+- **v1.0**:
+ - İlk sürüm.
+
+### Krediler
 - [Ekşi Sözlük Sol Frame Kaldırgacı](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-sol-frame-kal/kahiifbhglbbanbmkkgklfccicbglcjl)
 - [EksiTube](https://github.com/metude/eksitube)
 - [EkşiSözlük Troll Butonu](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-troll-butonu/lhgmmdnlaoppjfbjgdhokcipogmgcfcc)
