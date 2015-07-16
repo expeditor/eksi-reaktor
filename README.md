@@ -9,6 +9,7 @@
   - Konulu videoları da gizleyebilir.
   - Hatta konulu videolarda 59saniye yerine Youtube da kullanabilir.
   - Üşengeçler için troll'lere eklemeyi kolaylaştırır.
+  - Sağ tık menüde seçili kelimeyi ekşi'de aramak için menü seçeneği.
 
 ### Kelime filtresi
 Sol frame için kelime sansürünü açayım: [jiddu krişnamurti](https://eksisozluk.com/jiddu-krisnamurti--94693) başlığını ele alalım. Mesela `nam` kelimesini sansürlediğimiz takdirde `jiddu krişnamurti` içinde `nam` olduğundan dolayı sol frame'den uçurulacaktır. Belki ilerleyen zamanlarda, talep olursa daha gelişmiş filtreler eklenebilir. `meltem banko` gibi birden fazla kelime için de aynı şekilde çalışır.
@@ -27,6 +28,8 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa)'dan kurulum için [burayı kullanabilirsiniz](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa?hl=tr&gl=TR).
 
 ### Sürüm değişiklikleri
+- **v1.3**:
+ - Sağ tık menü'ye seçili kelimeyi ekşi'de aramak için seçenek
 - **v1.2**:
  - Sol frame sansürü için regex desteği.
 - **v1.1**:

@@ -4,10 +4,11 @@
   "author": "expeditor",
   "homepage_url": "https://github.com/expeditor/eksi-reaktor",
   "description": "EkşiSözlük için bağzı aparatlar",
-  "version": "1.2",
+  "version": "1.3",
   "permissions": [
     "*://eksisozluk.com/*",
-     "storage"
+     "storage",
+     "contextMenus"
   ],
   "icons": { "128": "icon.png" },
   "options_ui": {"page": "options.html", "chrome_style": true},
@@ -20,5 +21,6 @@
     "js": [ "jquery.js","eksin.user.js" ],
     "matches":[ "*://eksisozluk.com/*" ],
     "run_at": "document_end"
-  }]
+  }],
+  "background": {"scripts": ["background.js"]}
 }
