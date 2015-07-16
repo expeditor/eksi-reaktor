@@ -34,13 +34,17 @@ function kelimelerimiz (sansurluk) {
   istibdatDevri();
 }
 
+
 function istibdatDevri(){
   $("ul.topic-list.partial li").each(function(k,v){
     for (j=0; j<sansur.length; j++) {
-      if (v.innerHTML.indexOf(sansur[j])>0) {
+      var str = $(this).text();
+      var re = new RegExp(sansur[j], "i");
+      var n = str.search(re);
+      if (n>0) {
         $(this).remove();
-      }
-    }
+      } // /if
+    } // /for
   });
 }
 
