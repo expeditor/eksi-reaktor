@@ -16,7 +16,11 @@
 ### Kelime filtresi
 Sol frame için kelime sansürünü açayım: [jiddu krişnamurti](https://eksisozluk.com/jiddu-krisnamurti--94693) başlığını ele alalım. Mesela `nam` kelimesini sansürlediğimiz takdirde `jiddu krişnamurti` içinde `nam` olduğundan dolayı sol frame'den uçurulacaktır. Belki ilerleyen zamanlarda, talep olursa daha gelişmiş filtreler eklenebilir. `meltem banko` gibi birden fazla kelime için de aynı şekilde çalışır.
 
-Eğer `regex` biliyorsanız, bayrakları kullanmadan `pattern` olarak yazabilirsiniz. Bilmeseniz de regex'i kolay bir şekilde öğrenebilirsiniz. Bu sayede daha gelişmiş filtreler yapabilirsiniz.
+Eğer `regex` biliyorsanız, şöyle kullanablisiniz. Bayrakları kullanmak için `kelime/i` formatında yazabilirsiniz. Eğer bayrak kullanmayacaksınız sadece pattern'i  yazmanız yeterli.
+
+`Tam kelime eşleme` için şu formatı kullanabilirsiniz: `\bkelime\b`
+
+Regex'i daha gelişmiş filtreler hazırlamak için bilmeseniz de kolay bir şekilde öğrenebilirsiniz.
 
 ### Troll
 Bazı yazarları sadece bir entrysinden yola çıkarak bile, çok uzatmadan trollere eklemek:
@@ -30,6 +34,8 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa)'dan kurulum için [burayı kullanabilirsiniz](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa?hl=tr&gl=TR).
 
 ### Sürüm değişiklikleri
+- **v1.3.1**:
+ - Regex'te düzeltme ve flag desteği.
 - **v1.3**:
  - Sağ tık menü'ye seçili kelimeyi ekşi'de aramak için seçenek
  - Şükela modu ve badi entrylerini görünür yere al.

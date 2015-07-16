@@ -39,9 +39,11 @@ function istibdatDevri(){
   $("ul.topic-list.partial li").each(function(k,v){
     for (j=0; j<sansur.length; j++) {
       var str = $(this).text();
-      var re = new RegExp(sansur[j], "i");
+      var subRe = sansur[j].split("/");
+      if (subRe[1] == null) subRe[1] = "i";
+      var re = new RegExp(subRe[0], subRe[1]);
       var n = str.search(re);
-      if (n>0) {
+      if (n>=0) {
         $(this).remove();
       } // /if
     } // /for
