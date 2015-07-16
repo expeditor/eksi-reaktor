@@ -10,6 +10,8 @@
   - Hatta konulu videolarda 59saniye yerine Youtube da kullanabilir.
   - Üşengeçler için troll'lere eklemeyi kolaylaştırır.
   - Sağ tık menüde seçili kelimeyi ekşi'de aramak için menü seçeneği.
+  - Badi entrylerini ve şükela modunu başlık altındaki araştır menüsünün hizasına alır.
+
 
 ### Kelime filtresi
 Sol frame için kelime sansürünü açayım: [jiddu krişnamurti](https://eksisozluk.com/jiddu-krisnamurti--94693) başlığını ele alalım. Mesela `nam` kelimesini sansürlediğimiz takdirde `jiddu krişnamurti` içinde `nam` olduğundan dolayı sol frame'den uçurulacaktır. Belki ilerleyen zamanlarda, talep olursa daha gelişmiş filtreler eklenebilir. `meltem banko` gibi birden fazla kelime için de aynı şekilde çalışır.
@@ -30,6 +32,7 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 ### Sürüm değişiklikleri
 - **v1.3**:
  - Sağ tık menü'ye seçili kelimeyi ekşi'de aramak için seçenek
+ - Şükela modu ve badi entrylerini görünür yere al.
 - **v1.2**:
  - Sol frame sansürü için regex desteği.
 - **v1.1**:

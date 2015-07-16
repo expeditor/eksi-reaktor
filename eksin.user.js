@@ -101,6 +101,18 @@ chrome.storage.sync.get({
   }//if.itemsyoutube
 });
 
+/*
+şükela modunu ve badi entrylerini görünür bir yere al
+*/
+
+if ($("#in-topic-search-options li a")[2].text == "linkler") {
+ $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[1].href +  ">şükela</a>");
+} else {
+ $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[2].href +  ">şükela</a>");
+ $(".sub-title-menu").append("<strong><a href=" + $("#in-topic-search-options li a")[0].href +  ">" + $("#in-topic-search-options li a")[0].text + "</a></strong>");
+}
+
+
 
 /*
 Yazarın yanındaki diğerin altına troll butonu.
