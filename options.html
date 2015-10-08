@@ -26,6 +26,20 @@
       font-weight: bold;
     }
 
+    fieldset {
+      border:1px dashed grey;
+      padding: 0.2em;
+    }
+
+    legend {
+      padding: 0.2em 0.5em;
+      border:1px dashed grey;
+      color:grey;
+      font-size:90%;
+      text-align:right;
+      border-radius: 2px;
+    }
+
   </style>
 
 </head>
@@ -34,19 +48,7 @@
   Sol frame'de sansürlenesi kelimeler <sup>(regex pattern'i yazabilirsiniz)</sup>: <br>
   <input type="text" id="sansurle" placeholder="virgül ile ayırınız">
 
-<p>
-  <label>
-    <input type="checkbox" id="solFrame">
-    Sol frame'i göster.
-  </label>
-</p>
 
-<p>
-  <label>
-    <input type="checkbox" id="konulu">
-    Konulu videoları göster.
-  </label>
-</p>
 
 <p>
   <label>
@@ -68,6 +70,32 @@
     Üst menüyü sabitle.
   </label>
 </p>
+
+<fieldset>
+  <legend>Dikkat dağıtanlar</legend>
+  <p>
+    <label>
+      <input type="checkbox" id="odaklan">
+      Odaklan. İçerik ve arama kutusuyla başbaşa kal.
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <input type="checkbox" id="solFrame">
+      Sol frame'i göster.
+    </label>
+  </p>
+
+  <p>
+    <label>
+      <input type="checkbox" id="konulu">
+      Konulu videoları göster.
+    </label>
+  </p>
+
+</fieldset>
+
 
   <div id="status"></div>
 

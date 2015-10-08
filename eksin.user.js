@@ -1,34 +1,61 @@
-/*
-Sol Frame'i göster/gizle
-*/
+(function() {
+    var noTheme = {
+        activate: function() {
+            var innocence = document.getElementById('return-to-innocence');
+            if (innocence) {
+                innocence.click();
+            }
+        }
+    };
+    noTheme.activate();
+})();
+
+
+// entry arası reklamı yok et
+$('.sponsored').remove();
+
+/* Sol Frame'i göster/gizle */
 chrome.storage.sync.get({
-  solFrame: true
+  solFrame: true,
+  topBar: false,
+  konulu: true,
+  odaklan: false
 }, function(items) {
-  if (!items.solFrame) {
-    var el = document.getElementById('index-section');
-    el.style.display = "none";
+  if (items.odaklan) {
+    odaklan(false, false, true, false);
+  } else {
+    odaklan(items.konulu, items.solFrame, items.topBar, !items.odaklan);
   }
 });
 
-/*
-Üst bar toggle
-*/
-chrome.storage.sync.get({
-  topBar: false
-}, function(items) {
-  if (items.topBar) {
-    document.getElementsByTagName("header")[0].style.position = "absolute";
-  }
-});
+function odaklan(konulu, solFrame, topBar, ustMenu) {
+    /* Konulu videolar göster/gizle */
+    if (konulu == false) {
+      document.getElementById('videos').style.display = "none";
+    }
+
+    if (solFrame == false) {
+      document.getElementById('index-section').style.display = "none";
+    }
+
+    /* üst bar toggle */
+    if (topBar == true) {
+      document.getElementsByTagName("header")[0].style.position = "absolute";
+    }
+
+    /* Üst menüdeki zımbırtılar */
+    if (ustMenu == false) {
+      document.getElementById("sub-navigation").style.display = "none";
+      document.getElementById("top-navigation").style.display = "none";
+    }
+
+} /* odaklan()
+
 
 /*
 SANSÜR
 Kelime sansürleme.
 */
-
-// entry arası reklamı yok et
-$('.sponsored').remove();
-
 var sansur;
 chrome.storage.sync.get({
   sansurlenesiKelimeler: ''
@@ -72,18 +99,6 @@ gozcu.observe(
   { attributes: true, childList: true, characterData: true }
 );
 
-
-/*
-Konulu videolar göster/gizle
-*/
-chrome.storage.sync.get({
-  konulu: true
-}, function(items) {
-  if (!items.konulu) {
-    var el = document.getElementById('videos');
-    el.style.display = "none";
-  }
-});
 
 /*
 Konulu videolar'ı youtube ile değiştir

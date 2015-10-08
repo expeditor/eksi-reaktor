@@ -6,6 +6,7 @@ var konulu = document.getElementById('konulu').checked;
 var youtube = document.getElementById('youtube').checked;
 var troll = document.getElementById('troll').checked;
 var topBar = document.getElementById('topBar').checked;
+var odaklan = document.getElementById('odaklan').checked;
 
 chrome.storage.sync.set({
   sansurlenesiKelimeler: sansurle,
@@ -13,7 +14,8 @@ chrome.storage.sync.set({
   konulu: konulu,
   youtube: youtube,
   troll: troll,
-  topBar: topBar
+  topBar: topBar,
+  odaklan: odaklan
   }, function() {
   // Update status to let user know options were saved.
   var status = document.getElementById('status');
@@ -32,7 +34,8 @@ chrome.storage.sync.get({
   konulu: true,
   youtube: false,
   troll: false,
-  topBar: false
+  topBar: false,
+  odaklan: false
 }, function(items) {
   console.log(items);
   document.getElementById('sansurle').value = items.sansurlenesiKelimeler;
@@ -41,6 +44,7 @@ chrome.storage.sync.get({
   document.getElementById('youtube').checked = items.youtube;
   document.getElementById('troll').checked = items.troll;
   document.getElementById('topBar').checked = items.topBar;
+  document.getElementById('odaklan').checked = items.odaklan;
 });
 }
 

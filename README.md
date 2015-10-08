@@ -12,6 +12,8 @@
   - Sağ tık menüde seçili kelimeyi ekşi'de aramak için menü seçeneği.
   - Badi entrylerini ve şükela modunu başlık altındaki araştır menüsünün hizasına alır.
   - Üst menüyü sabitleme imkânı.
+  - Otomatik olarak her zamanki görünüme döndürür.
+  - **Odaklanma modu** ile sayfadaki dikkat dağıtan şeyler ortadan kaldırılır.
 
 
 ### Kelime filtresi
@@ -36,8 +38,10 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 
 ### Sürüm değişiklikleri
 
-- **v1.4**:
+- **v1.3.3**:
  - Üst menüyü sabitleme.
+ - Otomatik her zamanki görünüm.
+ - Odaklanma modu.
 - **v1.3.1**:
  - Regex'te düzeltme ve flag desteği.
 - **v1.3**:
@@ -55,3 +59,4 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 - [EksiTube](https://github.com/metude/eksitube)
 - [EkşiSözlük Troll Butonu](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-troll-butonu/lhgmmdnlaoppjfbjgdhokcipogmgcfcc)
 - [Logo](http://www.iconarchive.com/show/windows-8-icons-by-icons8/Industry-Nuclear-Power-Plant-icon.html)
+- [Her zamanki görünüm](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-her-zamanki-g/bmakpbbnljjdagpiajcojpmbcpmpijld)
