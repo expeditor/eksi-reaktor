@@ -11,6 +11,17 @@ chrome.storage.sync.get({
 });
 
 /*
+Üst bar toggle
+*/
+chrome.storage.sync.get({
+  topBar: false
+}, function(items) {
+  if (items.topBar) {
+    document.getElementsByTagName("header")[0].style.position = "absolute";
+  }
+});
+
+/*
 SANSÜR
 Kelime sansürleme.
 */
@@ -106,15 +117,14 @@ chrome.storage.sync.get({
 /*
 şükela modunu ve badi entrylerini görünür bir yere al
 */
-
-if ($("#in-topic-search-options li a")[2].text == "linkler") {
- $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[1].href +  ">şükela</a>");
-} else {
- $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[2].href +  ">şükela</a>");
- $(".sub-title-menu").append("<strong><a href=" + $("#in-topic-search-options li a")[0].href +  ">" + $("#in-topic-search-options li a")[0].text + "</a></strong>");
+if ($("#in-topic-search-options li a")[2] != null) {
+  if ($("#in-topic-search-options li a")[2].text == "linkler") {
+   $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[1].href +  ">şükela</a>");
+  } else {
+   $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[2].href +  ">şükela</a>");
+   $(".sub-title-menu").append("<strong><a href=" + $("#in-topic-search-options li a")[0].href +  ">" + $("#in-topic-search-options li a")[0].text + "</a></strong>");
+  }
 }
-
-
 
 /*
 Yazarın yanındaki diğerin altına troll butonu.

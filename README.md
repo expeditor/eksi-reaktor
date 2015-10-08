@@ -11,6 +11,7 @@
   - Üşengeçler için troll'lere eklemeyi kolaylaştırır.
   - Sağ tık menüde seçili kelimeyi ekşi'de aramak için menü seçeneği.
   - Badi entrylerini ve şükela modunu başlık altındaki araştır menüsünün hizasına alır.
+  - Üst menüyü sabitleme imkânı.
 
 
 ### Kelime filtresi
@@ -34,6 +35,9 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa)'dan kurulum için [burayı kullanabilirsiniz](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa?hl=tr&gl=TR).
 
 ### Sürüm değişiklikleri
+
+- **v1.4**:
+ - Üst menüyü sabitleme.
 - **v1.3.1**:
  - Regex'te düzeltme ve flag desteği.
 - **v1.3**:

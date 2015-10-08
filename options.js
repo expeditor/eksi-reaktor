@@ -5,12 +5,15 @@ var solFrame = document.getElementById('solFrame').checked;
 var konulu = document.getElementById('konulu').checked;
 var youtube = document.getElementById('youtube').checked;
 var troll = document.getElementById('troll').checked;
+var topBar = document.getElementById('topBar').checked;
+
 chrome.storage.sync.set({
   sansurlenesiKelimeler: sansurle,
   solFrame: solFrame,
   konulu: konulu,
   youtube: youtube,
-  troll: troll
+  troll: troll,
+  topBar: topBar
   }, function() {
   // Update status to let user know options were saved.
   var status = document.getElementById('status');
@@ -28,15 +31,16 @@ chrome.storage.sync.get({
   solFrame: true,
   konulu: true,
   youtube: false,
-  troll: false
+  troll: false,
+  topBar: false
 }, function(items) {
-
   console.log(items);
   document.getElementById('sansurle').value = items.sansurlenesiKelimeler;
   document.getElementById('solFrame').checked = items.solFrame;
   document.getElementById('konulu').checked = items.konulu;
   document.getElementById('youtube').checked = items.youtube;
   document.getElementById('troll').checked = items.troll;
+  document.getElementById('topBar').checked = items.topBar;
 });
 }
 
