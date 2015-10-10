@@ -37,7 +37,7 @@ chrome.storage.sync.get({
   topBar: false,
   odaklan: false
 }, function(items) {
-  console.log(items);
+
   document.getElementById('sansurle').value = items.sansurlenesiKelimeler;
   document.getElementById('solFrame').checked = items.solFrame;
   document.getElementById('konulu').checked = items.konulu;
@@ -50,5 +50,6 @@ chrome.storage.sync.get({
 
 document.addEventListener('DOMContentLoaded', restore_options);
 
-document.getElementById('save').addEventListener('click',
-  save_options);
+for (var i = 0; i < document.getElementsByTagName("input").length; i++) {
+  document.getElementsByTagName("input")[i].addEventListener('change', save_options);
+}

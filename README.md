@@ -37,7 +37,8 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa)'dan kurulum için [burayı kullanabilirsiniz](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa?hl=tr&gl=TR).
 
 ### Sürüm değişiklikleri
-
+- **v1.3.4**:
+ - Otomatik olarak kaydet.
 - **v1.3.3**:
  - Üst menüyü sabitleme.
  - Otomatik her zamanki görünüm.

@@ -17,7 +17,7 @@ $('.sponsored').remove();
 /* Sol Frame'i göster/gizle */
 chrome.storage.sync.get({
   solFrame: true,
-  topBar: false,
+  topBar: true,
   konulu: true,
   odaklan: false
 }, function(items) {
@@ -31,7 +31,9 @@ chrome.storage.sync.get({
 function odaklan(konulu, solFrame, topBar, ustMenu) {
     /* Konulu videolar göster/gizle */
     if (konulu == false) {
-      document.getElementById('videos').style.display = "none";
+      if (document.getElementById('videos')) {
+        document.getElementById('videos').style.display = "none";
+      }
     }
 
     if (solFrame == false) {
