@@ -4,7 +4,7 @@
   "author": "expeditor",
   "homepage_url": "https://github.com/expeditor/eksi-reaktor",
   "description": "Ekşi sözlük için bağzı aparatlar",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "permissions": [
     "*://eksisozluk.com/*",
      "storage",

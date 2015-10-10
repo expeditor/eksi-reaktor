@@ -14,6 +14,7 @@
   - Üst menüyü sabitleme imkânı.
   - Otomatik olarak her zamanki görünüme döndürür.
   - **Odaklanma modu** ile sayfadaki dikkat dağıtan şeyler ortadan kaldırılır.
+  - Araştır menüsü sağ tarafa eklendi.
 
 
 ### Kelime filtresi
@@ -39,6 +40,7 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 ### Sürüm değişiklikleri
 - **v1.3.4**:
  - Otomatik olarak kaydet.
+ - Araştır seçenekleri.
 - **v1.3.3**:
  - Üst menüyü sabitleme.
  - Otomatik her zamanki görünüm.

@@ -143,6 +143,32 @@ if ($("#in-topic-search-options li a")[2] != null) {
   }
 }
 
+
+/*
+araştır -> sağ tarafa
+*/
+var title = encodeURIComponent($("#title").text().trim());
+
+var arastir = "<a href='https://google.com/search?q="+title+"'>google</a> ";
+arastir += "<a href='https://en.wikipedia.org/wiki/"+title+"'>wikipedia</a> ";
+arastir += "<a href='https://tr.wikipedia.org/wiki/"+title+"'>vikipedi</a> ";
+arastir += "<a href='https://www.youtube.com/results?search_query="+title+"'>youtube</a> ";
+arastir += "<a href='https://twitter.com/search?q="+title+"'>twitter</a> ";
+arastir += "<a href='http://www.tdk.gov.tr/index.php?option=com_gts&arama=gts&kelime="+title+"'>tdk</a> ";
+arastir += "<a href='http://www.kubbealtilugati.com/sonuclar.aspx?mi=0&km="+title+"'>etimoloji</a> ";
+arastir += "<a href='http://www.etymonline.com/index.php?search="+title+"'>etymonline</a> ";
+arastir += "<a href='http://www.imdb.com/find?s=all&q="+title+"'>imdb</a> ";
+arastir += "<a href='https://www.google.com/search?tbm=isch&q="+title+"'>görseller</a> ";
+arastir += "<a href='http://www.amazon.com/s/?field-keywords="+title+"'>amazon</a> ";
+
+
+$("#aside").prepend("<h2 id='arastir'>araştır</h2>");
+$("#arastir").after(arastir);
+
+
+
+//;
+
 /*
 Yazarın yanındaki diğerin altına troll butonu.
 */
