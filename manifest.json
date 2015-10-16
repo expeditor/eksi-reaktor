@@ -1,10 +1,12 @@
 {
+"update_url": "https://clients2.google.com/service/update2/crx",
+
   "manifest_version": 2,
   "name": "Ekşi Reaktör",
   "author": "expeditor",
   "homepage_url": "https://github.com/expeditor/eksi-reaktor",
   "description": "Ekşi sözlük için bağzı aparatlar",
-  "version": "1.3.4",
+  "version": "1.3.6",
   "permissions": [
     "*://eksisozluk.com/*",
      "storage",

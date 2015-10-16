@@ -53,3 +53,5 @@ document.addEventListener('DOMContentLoaded', restore_options);
 for (var i = 0; i < document.getElementsByTagName("input").length; i++) {
   document.getElementsByTagName("input")[i].addEventListener('change', save_options);
 }
+
+document.getElementById("sansurle").addEventListener('keyup', save_options);

@@ -22,6 +22,10 @@
       width: 100%;
     }
 
+    a {
+      outline: 0;
+    }
+
     #status {
       font-weight: bold;
     }
@@ -45,8 +49,10 @@
 </head>
 
 <body>
-  Sol frame'de sansürlenesi kelimeler <sup>(regex pattern'i yazabilirsiniz)</sup>: <br>
-  <input type="text" id="sansurle" placeholder="virgül ile ayırınız">
+  Sol frame'de sansürlenesi kelimeler
+  <sup>(<a href="https://github.com/expeditor/eksi-reaktor#kelime-filtresi"
+     target="_blank">regex pattern'i</a> yazabilirsiniz)</sup>: <br>
+  <input type="text" id="sansurle" placeholder="virgül ile ayırınız" autofocus="">
 
 
 
@@ -80,7 +86,7 @@
       Üst menüyü sabitle.
     </label>
   </p>
-  
+
   <p>
     <label>
       <input type="checkbox" id="solFrame">
