@@ -13,6 +13,9 @@
 
 // entry arası reklamı yok et
 $('.sponsored').remove();
+// üst tarafta ublock tarzı eklentiler kullanırken reklam
+// dolayısıyla  çıkan karadeliği yok et
+$(".ads").hide();
 
 /* Sol Frame'i göster/gizle */
 chrome.storage.sync.get({
@@ -83,12 +86,17 @@ function istibdatDevri(){
       if (subRe[1] == null) subRe[1] = "i";
       var re = new RegExp(subRe[0], subRe[1]);
       var n = str.search(re);
+      var censoredList = [];
       if (n>=0) {
         $(this).remove();
+        console.log("Başlık engellendi: " + $(this).text());
       } // /if
     } // /for
   });
+
+
 }
+
 
 var gozcu = new MutationObserver(function(evrimler) {
   evrimler.forEach(function(evrimlerimiz) {
@@ -145,12 +153,10 @@ if ($("#in-topic-search-options li a")[2] != null) {
 
 
 /*
-araştır -> sağ tarafa
+sağ kolona araştır
 */
 var title = encodeURIComponent(
-  $("#title")
-  .text().replace(/'/g, "")
-  .trim()
+  $("#title").text().replace(/'/g, "").trim()
 );
 
 var arastir = "<a href='https://google.com/search?q="+title+"'>google</a> ";
@@ -196,7 +202,7 @@ chrome.storage.sync.get({
   // deaktifse süreci durdur
   if (!items.troll) return false;
 
-  //
+  // here we go
   $(".info")
       .each(function() {
           var user = $(this).find('.entry-author');

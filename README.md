@@ -15,7 +15,7 @@
   - Otomatik olarak her zamanki görünüme döndürür.
   - **Odaklanma modu** ile sayfadaki dikkat dağıtan şeyler ortadan kaldırılır.
   - Araştır menüsü sağ tarafa eklendi.
-  - Neler dönmüş serhat modu. Popüler'in sağındak 24saat ile sadece bugünün en çok entry girilen başlıkları doluluk sırasına göre listeleniyor.
+  - Neler dönmüş serhat modu. Popüler'in sağındaki **24saat** ile sadece bugünün en çok entry girilen başlıkları doluluk sırasına göre listeliyor.
 
 
 ### Kelime filtresi
@@ -23,7 +23,7 @@ Sol frame için kelime sansürünü açayım: [jiddu krişnamurti](https://eksis
 
 Eğer `regex` biliyorsanız, şöyle kullanablisiniz. Bayrakları kullanmak için `kelime/i` formatında yazabilirsiniz. Eğer bayrak kullanmayacaksınız sadece pattern'i  yazmanız yeterli.
 
-`Tam kelime eşleme` için şu formatı kullanabilirsiniz: `\bkelime\b`
+`Tam kelime eşleme` için şu formatı kullanabilirsiniz: `kelime\b`
 
 Regex'i daha gelişmiş filtreler hazırlamak için bilmeseniz de kolay bir şekilde öğrenebilirsiniz.
 
@@ -32,7 +32,7 @@ Bazı yazarları sadece bir entrysinden yola çıkarak bile, çok uzatmadan trol
 ![hızlı trolllere gönderim](http://i.imgur.com/shYlt7X.png)
 
 ### 59saniye
-Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımıza çıkıyor. Bunu tamamen ortadan kaldırabilir, ya da başlıkla ilişkili en uygun YouTube videosunu getirebilir. Özellikle müzik başlıklarında oldukça faydalı olacaktır. Eğer youtub'daki başlıkla alakalı bir video bulunamazsa, 59saniye içeriğini görünmesine izin veriyor.
+Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımıza çıkıyor. Bunu tamamen ortadan kaldırabilir, ya da başlıkla ilişkili en uygun YouTube videosunu getirebilir. Özellikle müzik başlıklarında oldukça faydalı olacaktır. Eğer youtube'daki başlıkla alakalı bir video bulunamazsa, 59saniye içeriğini görünmesine izin veriyor.
 
 # Kurulum
 
