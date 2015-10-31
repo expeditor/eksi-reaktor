@@ -122,8 +122,10 @@ chrome.storage.sync.get({
           if (response.items) {
                 $.each(response.items, function (i, data) {
                     var video_id = data.id.videoId;
-                    var video_frame = "<iframe width='100%' height='360' src='https://www.youtube.com/embed/"+ video_id + "?feature=player_embedded' frameborder='0' allowfullscreen></iframe>";
-                    if ($("#videos")) $("#videos").html(video_frame);
+                    if(video_id){ //undefined check
+                      var video_frame = "<h2 id=\"videolar\">konulu youtube</h2><iframe width='100%' height='360' src='https://www.youtube.com/embed/"+ video_id + "?feature=player_embedded' frameborder='0' allowfullscreen></iframe>";
+                      if ($("#videos")) $("#videos").html(video_frame);
+                    }
                 }); //.each
             } //if.response
         } //.sucess
