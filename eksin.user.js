@@ -112,10 +112,10 @@ gozcu.observe(
 Konulu videolar'ı youtube ile değiştir
 */
 chrome.storage.sync.get({
-  youtube: false
+  youtube: false, konulu: false
 }, function(items) {
 
-  if (items.youtube) {
+  if (items.konulu && items.youtube) {
     var search_input = $("#title").text();
 
     var yt_url =  "https://www.googleapis.com/youtube/v3/search?safeSearch=none&part=snippet&q="+ encodeURIComponent(search_input) +"&relevanceLanguage=tr&maxResults=1&key=AIzaSyBrQhJDh900EamsDLWZH6kQm_9Dc1AqcX8"
