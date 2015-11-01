@@ -176,13 +176,15 @@ $("#aside").prepend("<h2 id='arastir'>araştır</h2>");
 $("#arastir").after(arastir);
 
 /* neler dönmüş serhat */
-
-$("#quick-index-nav > li:nth-child(2)").after("<li><a href='#' id='gununEnCok' title='bugünün en çok entry girilenleri'>24saat</a></li>");
+$("#quick-index-nav > li:nth-child(3)").after("<li><a href='#' id='gununEnCok' title='sadece bugünün en çok entry girilenleri'>24saat</a></li>");
 
 document.getElementById('gununEnCok').addEventListener("click", gununEnPopuleri);
 
 function gununEnPopuleri() {
-  var today = (new Date()).getFullYear() + "-" + ((new Date()).getMonth() +1) + "-" + (new Date()).getDate();
+  var dayNum = (new Date()).getDate() < 10 ? "0" + (new Date()).getDate() : (new Date()).getDate();
+
+  var today = (new Date()).getFullYear() + "-" + ((new Date()).getMonth() +1) + "-" + dayNum;
+
   $("#searchForm_Keywords").val("");
   $("input#searchForm_When_From").val(today);
   $("input#searchForm_When_To").val(today);

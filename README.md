@@ -38,7 +38,14 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa)'dan kurulum için [burayı kullanabilirsiniz](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa?hl=tr&gl=TR).
 
+### Bilinen sorunlar
+- 24saat ile erişilen başlıklarda, trollere eklediğiniz yazarların entryleri de görüntüleniyor.
+
 ### Sürüm değişiklikleri
+- **v1.3.7**:
+ - [kyzn](https://github.com/kyzn)'in youtube-konulu düzeltmeleri. [1](https://github.com/expeditor/eksi-reaktor/pull/1) [2](https://github.com/expeditor/eksi-reaktor/pull/2)
+ - Alışılmış olarak sıkça kullanılan badi konumunun yerine geçtiğinden dolayı 24saat'i badinin sağına aldım.
+ - 24saat ile ilgili bir sorun düzeltildi.
 - **v1.3.6**:
  - araştır'daki ufak bir hata giderildi.
  - 24saat ile sadece bugünün en çok entry girilen başlıkları sıralanıyor. (neler dönmüş serhat modu)
@@ -69,3 +76,4 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 - [EkşiSözlük Troll Butonu](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-troll-butonu/lhgmmdnlaoppjfbjgdhokcipogmgcfcc)
 - [Logo](http://www.iconarchive.com/show/windows-8-icons-by-icons8/Industry-Nuclear-Power-Plant-icon.html)
 - [Her zamanki görünüm](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-her-zamanki-g/bmakpbbnljjdagpiajcojpmbcpmpijld)
+-[kyzn](https://github.com/kyzn): [1](https://github.com/expeditor/eksi-reaktor/pull/1) [2](https://github.com/expeditor/eksi-reaktor/pull/2)
