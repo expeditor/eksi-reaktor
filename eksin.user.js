@@ -56,7 +56,6 @@ function odaklan(konulu, solFrame, topBar, ustMenu) {
 
 } /* odaklan()
 
-
 /*
 SANSÜR
 Kelime sansürleme.
@@ -86,10 +85,9 @@ function istibdatDevri(){
       if (subRe[1] == null) subRe[1] = "i";
       var re = new RegExp(subRe[0], subRe[1]);
       var n = str.search(re);
-      var censoredList = [];
       if (n>=0) {
         $(this).remove();
-        console.log("Başlık engellendi: " + $(this).text());
+        console.log("Başlık sol frame'den çıkarıldı: " + $(this).text());
       } // /if
     } // /for
   });
@@ -242,7 +240,7 @@ chrome.storage.sync.get({
                     }, 3000);
 
                   return false;
-                }); //.get*/
+                }); //.get
 
                 $this.remove();
 
