@@ -42,6 +42,8 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 - 24saat ile erişilen başlıklarda, trollere eklediğiniz yazarların entryleri de görüntüleniyor.
 
 ### Sürüm değişiklikleri
+- **v1.3.8**:
+ - Bazı başlıklarda yukarıda gösterilen videoları da YouTube ile değiştir. [3](https://github.com/expeditor/eksi-reaktor/pull/3)
 - **v1.3.7**:
  - [kyzn](https://github.com/kyzn)'in youtube-konulu düzeltmeleri. [1](https://github.com/expeditor/eksi-reaktor/pull/1) [2](https://github.com/expeditor/eksi-reaktor/pull/2)
  - Alışılmış olarak sıkça kullanılan badi konumunun yerine geçtiğinden dolayı 24saat'i badinin sağına aldım.
