@@ -34,9 +34,13 @@ chrome.storage.sync.get({
 function odaklan(konulu, solFrame, topBar, ustMenu) {
     /* Konulu videolar göster/gizle */
     if (konulu == false) {
-      if (document.getElementById('videos')) {
+      if (document.getElementById('videos')) { //right sidebar
         document.getElementById('videos').style.display = "none";
       }
+      if (document.getElementById('video')) { //above entries
+        document.getElementById('video').style.display = "none";
+      }
+
     }
 
     if (solFrame == false) {
