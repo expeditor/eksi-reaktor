@@ -130,7 +130,11 @@ chrome.storage.sync.get({
                     var video_id = data.id.videoId;
                     if(video_id){ //undefined check
                       var video_frame = "<h2 id=\"videolar\">konulu youtube</h2><iframe width='100%' height='360' src='https://www.youtube.com/embed/"+ video_id + "?feature=player_embedded' frameborder='0' allowfullscreen></iframe>";
+                      var video_upper_frame = "<iframe width='100%' height='315' src='https://www.youtube.com/embed/"+ video_id + "?feature=player_embedded' frameborder='0' allowfullscreen></iframe>";
+                      //Convert videos on right side
                       if ($("#videos")) $("#videos").html(video_frame);
+                      //Convert videos that appear at top
+                      if ($("#video")) $("#video").html(video_upper_frame);
                     }
                 }); //.each
             } //if.response
