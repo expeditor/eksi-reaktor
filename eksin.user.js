@@ -13,6 +13,9 @@
 
 // entry arası reklamı yok et
 $('.sponsored').remove();
+// üst tarafta ublock tarzı eklentiler kullanırken reklam
+// dolayısıyla  çıkan karadeliği yok et
+$(".ads").hide();
 
 /* Sol Frame'i göster/gizle */
 chrome.storage.sync.get({
@@ -53,7 +56,6 @@ function odaklan(konulu, solFrame, topBar, ustMenu) {
 
 } /* odaklan()
 
-
 /*
 SANSÜR
 Kelime sansürleme.
@@ -85,10 +87,14 @@ function istibdatDevri(){
       var n = str.search(re);
       if (n>=0) {
         $(this).remove();
+        console.log("Başlık sol frame'den çıkarıldı: " + $(this).text());
       } // /if
     } // /for
   });
+
+
 }
+
 
 var gozcu = new MutationObserver(function(evrimler) {
   evrimler.forEach(function(evrimlerimiz) {
@@ -147,12 +153,10 @@ if ($("#in-topic-search-options li a")[2] != null) {
 
 
 /*
-araştır -> sağ tarafa
+sağ kolona araştır
 */
 var title = encodeURIComponent(
-  $("#title")
-  .text().replace(/'/g, "")
-  .trim()
+  $("#title").text().replace(/'/g, "").trim()
 );
 
 var arastir = "<a href='https://google.com/search?q="+title+"'>google</a> ";
@@ -172,13 +176,15 @@ $("#aside").prepend("<h2 id='arastir'>araştır</h2>");
 $("#arastir").after(arastir);
 
 /* neler dönmüş serhat */
-
-$("#quick-index-nav > li:nth-child(2)").after("<li><a href='#' id='gununEnCok' title='bugünün en çok entry girilenleri'>24saat</a></li>");
+$("#quick-index-nav > li:nth-child(3)").after("<li><a href='#' id='gununEnCok' title='sadece bugünün en çok entry girilenleri'>24saat</a></li>");
 
 document.getElementById('gununEnCok').addEventListener("click", gununEnPopuleri);
 
 function gununEnPopuleri() {
-  var today = (new Date()).getFullYear() + "-" + ((new Date()).getMonth() +1) + "-" + (new Date()).getDate();
+  var dayNum = (new Date()).getDate() < 10 ? "0" + (new Date()).getDate() : (new Date()).getDate();
+
+  var today = (new Date()).getFullYear() + "-" + ((new Date()).getMonth() +1) + "-" + dayNum;
+
   $("#searchForm_Keywords").val("");
   $("input#searchForm_When_From").val(today);
   $("input#searchForm_When_To").val(today);
@@ -198,7 +204,7 @@ chrome.storage.sync.get({
   // deaktifse süreci durdur
   if (!items.troll) return false;
 
-  //
+  // here we go
   $(".info")
       .each(function() {
           var user = $(this).find('.entry-author');
@@ -238,7 +244,7 @@ chrome.storage.sync.get({
                     }, 3000);
 
                   return false;
-                }); //.get*/
+                }); //.get
 
                 $this.remove();
 

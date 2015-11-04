@@ -15,7 +15,7 @@
   - Otomatik olarak her zamanki görünüme döndürür.
   - **Odaklanma modu** ile sayfadaki dikkat dağıtan şeyler ortadan kaldırılır.
   - Araştır menüsü sağ tarafa eklendi.
-  - Neler dönmüş serhat modu. Popüler'in sağındak 24saat ile sadece bugünün en çok entry girilen başlıkları doluluk sırasına göre listeleniyor.
+  - Neler dönmüş serhat modu. Popüler'in sağındaki **24saat** ile sadece bugünün en çok entry girilen başlıkları doluluk sırasına göre listeliyor.
 
 
 ### Kelime filtresi
@@ -23,7 +23,7 @@ Sol frame için kelime sansürünü açayım: [jiddu krişnamurti](https://eksis
 
 Eğer `regex` biliyorsanız, şöyle kullanablisiniz. Bayrakları kullanmak için `kelime/i` formatında yazabilirsiniz. Eğer bayrak kullanmayacaksınız sadece pattern'i  yazmanız yeterli.
 
-`Tam kelime eşleme` için şu formatı kullanabilirsiniz: `\bkelime\b`
+`Tam kelime eşleme` için şu formatı kullanabilirsiniz: `kelime\b`
 
 Regex'i daha gelişmiş filtreler hazırlamak için bilmeseniz de kolay bir şekilde öğrenebilirsiniz.
 
@@ -32,13 +32,20 @@ Bazı yazarları sadece bir entrysinden yola çıkarak bile, çok uzatmadan trol
 ![hızlı trolllere gönderim](http://i.imgur.com/shYlt7X.png)
 
 ### 59saniye
-Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımıza çıkıyor. Bunu tamamen ortadan kaldırabilir, ya da başlıkla ilişkili en uygun YouTube videosunu getirebilir. Özellikle müzik başlıklarında oldukça faydalı olacaktır. Eğer youtub'daki başlıkla alakalı bir video bulunamazsa, 59saniye içeriğini görünmesine izin veriyor.
+Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımıza çıkıyor. Bunu tamamen ortadan kaldırabilir, ya da başlıkla ilişkili en uygun YouTube videosunu getirebilir. Özellikle müzik başlıklarında oldukça faydalı olacaktır. Eğer youtube'daki başlıkla alakalı bir video bulunamazsa, 59saniye içeriğini görünmesine izin veriyor.
 
 # Kurulum
 
 [Chrome Web Store](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa)'dan kurulum için [burayı kullanabilirsiniz](https://chrome.google.com/webstore/detail/ek%C5%9Fi-reakt%C3%B6r/lijejpanomegahjfjepnnkdlfipkddaa?hl=tr&gl=TR).
 
+### Bilinen sorunlar
+- 24saat ile erişilen başlıklarda, trollere eklediğiniz yazarların entryleri de görüntüleniyor.
+
 ### Sürüm değişiklikleri
+- **v1.3.7**:
+ - [kyzn](https://github.com/kyzn)'in youtube-konulu düzeltmeleri. [1](https://github.com/expeditor/eksi-reaktor/pull/1) [2](https://github.com/expeditor/eksi-reaktor/pull/2)
+ - Alışılmış olarak sıkça kullanılan badi konumunun yerine geçtiğinden dolayı 24saat'i badinin sağına aldım.
+ - 24saat ile ilgili bir sorun düzeltildi.
 - **v1.3.6**:
  - araştır'daki ufak bir hata giderildi.
  - 24saat ile sadece bugünün en çok entry girilen başlıkları sıralanıyor. (neler dönmüş serhat modu)
@@ -69,3 +76,4 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 - [EkşiSözlük Troll Butonu](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-troll-butonu/lhgmmdnlaoppjfbjgdhokcipogmgcfcc)
 - [Logo](http://www.iconarchive.com/show/windows-8-icons-by-icons8/Industry-Nuclear-Power-Plant-icon.html)
 - [Her zamanki görünüm](https://chrome.google.com/webstore/detail/ek%C5%9Fi-s%C3%B6zl%C3%BCk-her-zamanki-g/bmakpbbnljjdagpiajcojpmbcpmpijld)
+-[kyzn](https://github.com/kyzn): [1](https://github.com/expeditor/eksi-reaktor/pull/1) [2](https://github.com/expeditor/eksi-reaktor/pull/2)
