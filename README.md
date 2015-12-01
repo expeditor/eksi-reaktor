@@ -1,5 +1,6 @@
 # Ekşi Reaktör
-[ekşisözlük](https://eksisozluk.com) deneyimini iyileştirmek için faydalı bir Chrome uzantısı. Zaman buldukça geliştirmeye devam edeceğim.
+[ekşisözlük](https://eksisozluk.com) deneyimini iyileştirmek için faydalı bir Chrome uzantısı.
+Bu aralar pek zaman bulamadığımdan gelişim pek olmayabilir. Düzeltmeler gerekirse en kısa zamanda yapmaya çalışacağım.
 
 ![Ekşi Reaktör ekran görüntüsü](https://i.imgur.com/fHVIzF8.png)
 
@@ -42,6 +43,8 @@ Konulu videolar genellikle gereksiz içerikler, lüzumsuz önerilerle karşımı
 - 24saat ile erişilen başlıklarda, trollere eklediğiniz yazarların entryleri de görüntüleniyor.
 
 ### Sürüm değişiklikleri
+- **v1.3.8**:
+ - Sözlükle ilgili düzeltmeler.
 - **v1.3.8**:
  - Bazı başlıklarda yukarıda gösterilen videoları da YouTube ile değiştir. [3](https://github.com/expeditor/eksi-reaktor/pull/3)
 - **v1.3.7**:

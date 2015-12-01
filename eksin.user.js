@@ -152,10 +152,7 @@ chrome.storage.sync.get({
 */
 if ($("#in-topic-search-options li a")[2] != null) {
   if ($("#in-topic-search-options li a")[2].text == "linkler") {
-   $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[1].href +  ">şükela</a>");
-  } else {
-   $(".sub-title-menu").append("<a href=" + $("#in-topic-search-options li a")[2].href +  ">şükela</a>");
-   $(".sub-title-menu").append("<strong><a href=" + $("#in-topic-search-options li a")[0].href +  ">" + $("#in-topic-search-options li a")[0].text + "</a></strong>");
+  	   $(".sub-title-menu").append("<strong><a href=" + $("#in-topic-search-options li a")[0].href +  ">" + $("#in-topic-search-options li a")[0].text + "</a></strong>");
   }
 }
 
@@ -216,47 +213,51 @@ chrome.storage.sync.get({
   $(".info")
       .each(function() {
           var user = $(this).find('.entry-author');
-          var parentFooter = $(this).parents('footer');
-          var feedBack = parentFooter.find('.feedback');
-          var responseArea = $('<span/>');
-          responseArea.addClass('response-area');
-          var userPage = $(user).attr('href');
-          var trollButton = $('<a/>');
-          trollButton.attr('title', 'troll');
-          trollButton.attr('href', '');
-          trollButton.html('troll');
-          trollButton.attr('style', 'font-weight:bold;');
-          var li = $('<li/>');
-          li.append(trollButton);
-          $(this).find('.dropdown-menu').append(li);
+          if ($(this).find('.entry-author').text() == $("#top-navigation ul li a").eq(2).attr('title')) { 
 
-              trollButton.on('click', function(e) {
-                e.preventDefault();
+          } else {
+	          var parentFooter = $(this).parents('footer');
+	          var feedBack = parentFooter.find('.feedback');
+	          var responseArea = $('<span/>');
+	          responseArea.addClass('response-area');
+	          var userPage = $(user).attr('href');
+	          var trollButton = $('<a/>');
+	          trollButton.attr('title', 'troll');
+	          trollButton.attr('href', '');
+	          trollButton.html('troll');
+	          trollButton.attr('style', 'font-weight:bold;');
+	          var li = $('<li/>');
+	          li.append(trollButton);
+	          $(this).find('.dropdown-menu').append(li);
 
-                var $this = $(this);
+	              trollButton.on('click', function(e) {
+	                e.preventDefault();
 
-                $.get(userPage, function(resp) {
-                    var html = $.parseHTML(resp);
-                    var link = $(html).find('#blocked-link').attr('data-url');
+	                var $this = $(this);
 
-                    if ($this.attr('data-url') === '#') {
-                        $this.remove();
-                        return false;
-                    }
+	                $.get(userPage, function(resp) {
+	                    var html = $.parseHTML(resp);
+	                    var link = $(html).find('#blocked-link').attr('data-url');
 
-                    $.post(link);
-                    responseArea.html('<strong style="color:red;">Kullanıcı engellendi.</strong>');
-                    feedBack.append(responseArea);
-                    window.setTimeout(function() {
-                        $(responseArea).remove();
-                    }, 3000);
+	                    if ($this.attr('data-url') === '#') {
+	                        $this.remove();
+	                        return false;
+	                    }
 
-                  return false;
-                }); //.get
+	                    $.post(link);
+	                    responseArea.html('<strong style="color:red;">Kullanıcı engellendi.</strong>');
+	                    feedBack.append(responseArea);
+	                    window.setTimeout(function() {
+	                        $(responseArea).remove();
+	                    }, 3000);
 
-                $this.remove();
+	                  return false;
+	                }); //.get
 
-              }); //trollButton.on('click')
+	                $this.remove();
+
+	              }); //trollButton.on('click')
+            } //.else
       }); //$(".info")
 
 });
