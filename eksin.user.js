@@ -64,10 +64,12 @@ function odaklan(konulu, solFrame, topBar, ustMenu) {
 SANSÜR
 Kelime sansürleme.
 */
-var sansur;
+var sansur, sansurleDebe;
 chrome.storage.sync.get({
-  sansurlenesiKelimeler: ''
+  sansurlenesiKelimeler: '',
+  sansurleDebe: false
 }, function(items) {
+  sansurleDebe = items.sansurleDebe;
   kelimelerimiz(items.sansurlenesiKelimeler);
 });
 
@@ -82,7 +84,11 @@ function kelimelerimiz (sansurluk) {
 
 
 function istibdatDevri(){
-  $("ul.topic-list.partial li").each(function(k,v){
+  var $basliklar = $("ul.topic-list.partial li");
+  if(sansurleDebe) {
+    $basliklar = $basliklar.add("ol.stats.topic-list.partial li");
+  }
+  $basliklar.each(function(k,v){
     for (j=0; j<sansur.length; j++) {
       var str = $(this).text();
       var subRe = sansur[j].split("/");
@@ -95,7 +101,6 @@ function istibdatDevri(){
       } // /if
     } // /for
   });
-
 
 }
 

@@ -1,6 +1,7 @@
 // Saves options to chrome.storage.sync.
 function save_options() {
 var sansurle = document.getElementById('sansurle').value;
+var sansurleDebe = document.getElementById('sansurleDebe').checked;
 var solFrame = document.getElementById('solFrame').checked;
 var konulu = document.getElementById('konulu').checked;
 var youtube = document.getElementById('youtube').checked;
@@ -10,6 +11,7 @@ var odaklan = document.getElementById('odaklan').checked;
 
 chrome.storage.sync.set({
   sansurlenesiKelimeler: sansurle,
+  sansurleDebe: sansurleDebe,
   solFrame: solFrame,
   konulu: konulu,
   youtube: youtube,
@@ -30,6 +32,7 @@ function restore_options() {
 // Use default value color = 'red' and likesColor = true.
 chrome.storage.sync.get({
   sansurlenesiKelimeler: '',
+  sansurleDebe: false,
   solFrame: true,
   konulu: true,
   youtube: false,
@@ -40,6 +43,7 @@ chrome.storage.sync.get({
 
   document.getElementById('sansurle').value = items.sansurlenesiKelimeler;
   document.getElementById('solFrame').checked = items.solFrame;
+  document.getElementById('sansurleDebe').checked = items.sansurleDebe;
   document.getElementById('konulu').checked = items.konulu;
   document.getElementById('youtube').checked = items.youtube;
   document.getElementById('troll').checked = items.troll;
